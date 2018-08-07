@@ -1,0 +1,1751 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#"
+     xml:base="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#connectedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#connectedIn">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#has"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#employeeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#employeeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasDoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasDoctor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isDoctorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPacient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPacient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPartOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPosition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasRelative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasRelative">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isRelativeTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#help -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#help">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isDoctorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isDoctorOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isObservedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isObservedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPosition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isRelativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isRelativeTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#relatives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#locatedIn">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureBreath -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureBreath">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#breath"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureECG -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureECG">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ECG"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureEMG -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureEMG">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#EMG_-_eletromiography"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGRS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGRS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#GRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGlucose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGlucose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#glucometer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureOxygen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureOxygen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oximetry"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePosition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePressureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePressureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureSPO2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureSPO2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#SPO2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureTemperatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureTemperatureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesBehaviorTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesBehaviorTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caregiver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPacientOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oxygen_level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oxygen_level">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Crisis_Hypertensive_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Crisis_Hypertensive_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ECG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ECG">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureECG"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#EMG_-_eletromiography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#EMG_-_eletromiography">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureEMG"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Fever_or_Hyperthermia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Fever_or_Hyperthermia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#GRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#GRS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGRS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hyperpyrexia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hyperpyrexia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypertensive_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypertensive_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypothermia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypothermia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Normal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#temperature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">139</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#SPO2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#SPO2">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureSPO2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">99</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">159</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_Crisis_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_Crisis_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">179</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">109</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_diastolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_systolic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pressure"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePosition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measurePressureOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#bones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#bones">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#brain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#brain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#breath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#breath">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureBreath"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#cardiologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#cardiologist">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caregiver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caregiver">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureTemperatureOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#diastolic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isDoctorOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#fowlers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#fowlers">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#glucometer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#glucometer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureGlucose"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#has"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#has"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#leftLatereal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#leftLatereal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#lung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#lung">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#neurologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#neurologist">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#brain"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#nurse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#employeeOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oximetry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oximetry">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#measureOxygen"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPosition"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#fowlers"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#leftLatereal"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#prone"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#rightLateral"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#supine"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caregiver"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#nurse"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#paramedic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isObservedBy"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPosition"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#paramedic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#paramedic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#employeeOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#workIn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hasPartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#bones"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#brain"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#lung"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#physiotherapist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#physiotherapist">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#bones"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#prone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#prone">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pulmonologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pulmonologist">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isSpecialistIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#lung"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#relatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#relatives">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isRelativeTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#rightLateral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#rightLateral">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#supine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#supine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#systolic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Floki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Floki">
+        <assist rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Gabriel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Gabriel">
+        <assist rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Raquel"/>
+        <workIn rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Monte_sinai"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#João -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#João">
+        <employeeOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Monte_sinai"/>
+        <workIn rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Samu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Monte_sinai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Monte_sinai">
+        <has rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_diastolic"/>
+        <has rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_sytolic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_diastolic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_diastolic">
+        <measurePressureOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+        <monitor rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+        <pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</pressure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_sytolic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pressure_measurer_sytolic">
+        <measurePressureOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+        <pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</pressure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Raquel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Raquel">
+        <hasPacient rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+        <isSpecialistIn rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#coracao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Samu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Samu">
+        <belongsTo rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Monte_sinai"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais">
+        <caredBy rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Gabriel"/>
+        <hasPosition rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer">
+        <measurePosition rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#coracao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#coracao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_1">
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_2">
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_3">
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_4">
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#position_5">
+        <position rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Crisis_Hypertensive_diastolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_diastolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_diastolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_diastolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_diastolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_diastolic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ECG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#EMG_-_eletromiography"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#GRS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#SPO2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#blood_pressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#breath"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#corporal_temperature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#glucometer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#oximetry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Fever_or_Hyperthermia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hyperpyrexia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypothermia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Normal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypertensive_systolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Hypotension_systolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Pre_Hypertension_systolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_1_Hypertension_systolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Stage_2_Hypertension_Crisis_systolic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Wanted_systolic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#ambulance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#hospital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#bones"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#brain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#entities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#heart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#lung"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#cardiologist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#neurologist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#physiotherapist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pulmonologist"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#fowlers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#leftLatereal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#prone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#rightLateral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#supine"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

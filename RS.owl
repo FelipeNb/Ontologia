@@ -1,0 +1,756 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#allocateIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#allocateIn">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasFeedback">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isFeedbackOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasMethod">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isFeedbackOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isFeedbackOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTechnique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTechnique">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#memory_based_model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model_based_model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTypeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTypeOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#accuracy_measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#accuracy_measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#collaborative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#collaborative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#competence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#competence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#content_based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#content_based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#content_manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#content_manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#demographic_filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#demographic_filtering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#explicit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#explicit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#implicit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external_developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external_developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#context"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isFeedbackOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#geolocalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#geolocalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#group_info_extration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#group_info_extration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#historic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#historic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hybrid_filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hybrid_filtering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#collaborative"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#content_based"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hybrid_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hybrid_model">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#memory_based_model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model_based_model"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#implicit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#implicit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal_developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal_developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#developer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#item_based_filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#item_based_filtering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#collaborative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#linked_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#linked_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#memory_based_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#memory_based_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model_based_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model_based_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#ontology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#ontology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#preference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#preference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasFeedback"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isStageOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#researcher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#resource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isPartOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_filtering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#external"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#user_based_filtering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#user_based_filtering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#collaborative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#user_info_extration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#user_info_extration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#profile"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#Felipe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#Felipe"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#resource"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#linked_data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#ontology"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_network"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
