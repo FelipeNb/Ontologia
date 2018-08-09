@@ -745,7 +745,7 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#nurse"/>
-        <ObjectUnionOf>
+        <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#assist"/>
                 <Class IRI="#doctor"/>
@@ -754,7 +754,7 @@
                 <ObjectProperty IRI="#workIn"/>
                 <Class IRI="#hospital"/>
             </ObjectSomeValuesFrom>
-        </ObjectUnionOf>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#oximetry"/>
