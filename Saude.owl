@@ -751,10 +751,6 @@
                 <Class IRI="#doctor"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#employeeOf"/>
-                <Class IRI="#hospital"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#workIn"/>
                 <Class IRI="#hospital"/>
             </ObjectSomeValuesFrom>
