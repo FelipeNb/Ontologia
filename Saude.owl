@@ -16,7 +16,13 @@
         <Class IRI="#Wanted_diastolic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#pacient_position"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measureBreath"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#pressure"/>
@@ -25,10 +31,10 @@
         <Class IRI="#Pre_Hypertension_diastolic"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#oxygen_level"/>
+        <ObjectProperty IRI="#measureEMG"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#position_2"/>
+        <DataProperty IRI="#oxygen_level"/>
     </Declaration>
     <Declaration>
         <Class IRI="#paramedic"/>
@@ -40,151 +46,13 @@
         <Class IRI="#oximetry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hypertensive_systolic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#accelerometer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#systolic"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#locatedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measureECG"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SPO2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#glucometer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#heart"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stage_2_Hypertension_Crisis_systolic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#rightLateral"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Floki"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#blood_pressure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#position_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Pressure_measurer_sytolic"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPacientOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measureOxygen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#bones"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pacient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#entities"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measurePosition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#position_4"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#monitor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPosition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasRelative"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isDoctorOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#lung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GRS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#corporal_temperature"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#employeeOf"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Samu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EMG_-_eletromiography"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#physiotherapist"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#position_3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hypotension_systolic"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#temperature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#leftLatereal"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#connectedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#providesBehaviorTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isRelativeTo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#brain"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#fowlers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pacient_position"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measureBreath"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measureEMG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tais"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Normal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sensors"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Monte_sinai"/>
+        <Class IRI="#Hypertensive_systolic"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPacient"/>
@@ -193,22 +61,37 @@
         <ObjectProperty IRI="#hasDoctor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#systolic"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isSpecialistIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
     </Declaration>
     <Declaration>
         <Class IRI="#relatives"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#measureECG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPO2"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#measureGRS"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#assist"/>
+        <Class IRI="#pulmonologist"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#pulmonologist"/>
+        <ObjectProperty IRI="#assist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glucometer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#doctor"/>
@@ -223,16 +106,31 @@
         <ObjectProperty IRI="#measureGlucose"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#heart"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Stage_1_Hypertension_systolic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stage_2_Hypertension_Crisis_systolic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Crisis_Hypertensive_diastolic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#position_5"/>
+        <Class IRI="#rightLateral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blood_pressure"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#measurePressureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPacientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measureOxygen"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hypothermia"/>
@@ -241,16 +139,31 @@
         <Class IRI="#diastolic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#bones"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Stage_2_Hypertension_diastolic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pacient"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Wanted_systolic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#entities"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#people"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#help"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measurePosition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pre_Hypertension_systolic"/>
@@ -262,34 +175,43 @@
         <ObjectProperty IRI="#caredBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#monitor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#nurse"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#providesInformation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isPosition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#neurologist"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#João"/>
+        <ObjectProperty IRI="#hasRelative"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDoctorOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stage_1_Hypertension_diastolic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#lung"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#position"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Pressure_measurer_diastolic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fever_or_Hyperthermia"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ambulance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever_or_Hyperthermia"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
@@ -304,6 +226,21 @@
         <ObjectProperty IRI="#measureSPO2"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GRS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#corporal_temperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#employeeOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#physiotherapist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EMG_-_eletromiography"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#supine"/>
     </Declaration>
     <Declaration>
@@ -313,7 +250,10 @@
         <ObjectProperty IRI="#measureTemperatureOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Raquel"/>
+        <Class IRI="#Hypotension_systolic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isObservedBy"/>
@@ -322,16 +262,28 @@
         <ObjectProperty IRI="#workIn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Gabriel"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#hospital"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#coracao"/>
+        <Class IRI="#leftLatereal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesBehaviorTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#brain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelativeTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#prone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fowlers"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Crisis_Hypertensive_diastolic"/>
@@ -1144,125 +1096,6 @@
         <Class IRI="#rightLateral"/>
         <Class IRI="#supine"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#heart"/>
-        <NamedIndividual IRI="#coracao"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#assist"/>
-        <NamedIndividual IRI="#Floki"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#assist"/>
-        <NamedIndividual IRI="#Gabriel"/>
-        <NamedIndividual IRI="#Raquel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#workIn"/>
-        <NamedIndividual IRI="#Gabriel"/>
-        <NamedIndividual IRI="#Monte_sinai"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#employeeOf"/>
-        <NamedIndividual IRI="#João"/>
-        <NamedIndividual IRI="#Monte_sinai"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#workIn"/>
-        <NamedIndividual IRI="#João"/>
-        <NamedIndividual IRI="#Samu"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has"/>
-        <NamedIndividual IRI="#Monte_sinai"/>
-        <NamedIndividual IRI="#Pressure_measurer_diastolic"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has"/>
-        <NamedIndividual IRI="#Monte_sinai"/>
-        <NamedIndividual IRI="#Pressure_measurer_sytolic"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#measurePressureOf"/>
-        <NamedIndividual IRI="#Pressure_measurer_diastolic"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#monitor"/>
-        <NamedIndividual IRI="#Pressure_measurer_diastolic"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#measurePressureOf"/>
-        <NamedIndividual IRI="#Pressure_measurer_sytolic"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPacient"/>
-        <NamedIndividual IRI="#Raquel"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSpecialistIn"/>
-        <NamedIndividual IRI="#Raquel"/>
-        <NamedIndividual IRI="#coracao"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#belongsTo"/>
-        <NamedIndividual IRI="#Samu"/>
-        <NamedIndividual IRI="#Monte_sinai"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#caredBy"/>
-        <NamedIndividual IRI="#Tais"/>
-        <NamedIndividual IRI="#Gabriel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPosition"/>
-        <NamedIndividual IRI="#Tais"/>
-        <NamedIndividual IRI="#position_1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#measurePosition"/>
-        <NamedIndividual IRI="#accelerometer"/>
-        <NamedIndividual IRI="#Tais"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#pressure"/>
-        <NamedIndividual IRI="#Pressure_measurer_diastolic"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#pressure"/>
-        <NamedIndividual IRI="#Pressure_measurer_sytolic"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">160</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#position"/>
-        <NamedIndividual IRI="#position_1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#position"/>
-        <NamedIndividual IRI="#position_2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#position"/>
-        <NamedIndividual IRI="#position_3"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#position"/>
-        <NamedIndividual IRI="#position_4"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#position"/>
-        <NamedIndividual IRI="#position_5"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
-    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasDoctor"/>
         <ObjectProperty IRI="#isDoctorOf"/>
