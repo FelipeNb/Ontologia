@@ -67,25 +67,22 @@
         <Class IRI="#user_based_filtering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#internal_developer"/>
+        <Class IRI="#prediction_techniques"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#prediction_techniques"/>
+        <Class IRI="#internal_developer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#model_based_model"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Felipe"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#environment"/>
+        <ObjectProperty IRI="#hasStage"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasStage"/>
+        <Class IRI="#environment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#extraction"/>
@@ -184,10 +181,10 @@
         <Class IRI="#collaborative"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ontology"/>
+        <Class IRI="#context"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#context"/>
+        <Class IRI="#ontology"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTechnique"/>
