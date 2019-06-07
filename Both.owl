@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-39"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-39">
+    <Prefix name="" IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-39#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29</Import>
+    <Import>http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23</Import>
+    <Declaration>
+        <NamedIndividual IRI="#extraction_ind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#validate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RMSE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#recomendaçãoMedicamento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasToBeConsidered"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#colaborative_filt_ind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isValidatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#neural_net"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Facebook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rs_ind"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#accuracy_measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#validate"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#people"/>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient_position"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#feedback"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#filtering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#doctor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#nurse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#paramedic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#people"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#isPartOf"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#extraction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#enrichment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#sensors"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#connectedIn"/>
+            <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#pacient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#social_network"/>
+        <NamedIndividual IRI="#Twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#user_based_filtering"/>
+        <NamedIndividual IRI="#colaborative_filt_ind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#model_based_model"/>
+        <NamedIndividual IRI="#neural_net"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommendation"/>
+        <NamedIndividual IRI="#recomendaçãoMedicamento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#recommender_system"/>
+        <NamedIndividual IRI="#rs_ind"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Raquel"/>
+        <NamedIndividual IRI="#recomendaçãoMedicamento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+        <NamedIndividual IRI="#extraction_ind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#connectedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#Tais"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isTypeOf"/>
+        <NamedIndividual IRI="#Facebook"/>
+        <NamedIndividual IRI="#Twitter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+        <NamedIndividual IRI="#Facebook"/>
+        <NamedIndividual IRI="#extraction_ind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+        <NamedIndividual IRI="#colaborative_filt_ind"/>
+        <NamedIndividual IRI="#neural_net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+        <NamedIndividual IRI="#extraction_ind"/>
+        <NamedIndividual IRI="#colaborative_filt_ind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+        <NamedIndividual IRI="#neural_net"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#accelerometer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#validate"/>
+        <NamedIndividual IRI="#neural_net"/>
+        <NamedIndividual IRI="#RMSE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#hasStage"/>
+        <NamedIndividual IRI="#rs_ind"/>
+        <NamedIndividual IRI="#neural_net"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isUsedBy"/>
+        <ObjectProperty IRI="#uses"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#providesInformationTo"/>
+        <ObjectProperty IRI="#hasToBeConsidered"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#receiveInformationOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+        <ObjectProperty IRI="#hasToBeConsidered"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isValidatedBy"/>
+        <ObjectProperty IRI="#validate"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#validate"/>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#accuracy_measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#validate"/>
+        <Class IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#prediction_techniques"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#assist"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+            <ObjectProperty IRI="#uses"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#belongsTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#isAssociatedTo"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-23#precedes"/>
+            <ObjectProperty IRI="#validate"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#monitor"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#caredBy"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/felipe/ontologies/2018/6/untitled-ontology-29#providesInformation"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
